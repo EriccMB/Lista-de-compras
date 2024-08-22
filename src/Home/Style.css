@@ -1,0 +1,98 @@
+.container {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    padding: 50px;
+    width: 400px;
+    border-radius: 10px;
+    min-height: 00px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h1 {
+        text-align: center;
+    }
+
+    & p {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & input {
+            width: 70%;
+            background-color: rgba(128, 128, 128, 0.31);
+            padding: 15px;
+            font-size: 17px;
+            height: 20px;
+            outline: none;
+            border: none;
+            border-radius: 20px 0px 0px 20px;
+            color: white;
+        }
+
+        & #add {
+            width: 30%;
+            background-color: rgba(255, 255, 255, 0.636);
+            border-radius: 0px 20px 20px 0px;
+            padding: 16px;
+            height: 50px;
+            font-size: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+        & #add:hover {
+            opacity: 0.8;
+        }
+    }
+
+    & #items {
+        background-color: rgba(216, 209, 209, 0.358);
+        height: 40px;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+
+        & span {
+            padding-left: 10px;
+            text-transform: capitalize;
+        }
+
+        & button {
+            font-size: 20px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        & button:hover {
+            opacity: 0.5;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 70%;
+        margin: 100px auto;
+        & p {
+    
+            & input {
+                font-size: 14px;
+                height: 15px;
+            }
+    
+            & #add {
+                width: 30%;
+                font-size: 13px;
+                height: 45px;
+                
+            }
+        }
+        & #items {
+            font-size: 13px;
+        }
+    }
+}
